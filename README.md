@@ -3,7 +3,14 @@ Transactions analysis Mtn Rwanda Mobile Money  using SQL JOINs and Window functi
 
 
 **BUSINESS PROBLEM
-MTN Rwanda needs to analyze Mobile Money transactions to improve customer engagement and agent performance.
+**Business COntext:
+MTN Rwanda OperATES a Mobile Money (MOMO) SRVICE THAT ENABLES CUSTOERS TO TRANSFER MONEY, PAY MERCHANTS, AND WITHDRAW CASH THROUGH AGENTS.
+
+**Data challenge is:
+MTN needs to analyze transaction data to identify active customers, inactive users and transaction trends across the country(Rwanda)
+
+**Expected OUtcome
+The analysis will help improve customer engagement and optimize agent distribution.
 
 ** Schema and ER diagram:
 
@@ -34,14 +41,6 @@ MTN Rwanda needs to analyze Mobile Money transactions to improve customer engage
 2. Run "joins.sql" for JOIN queries
 3. Run "window_functions.sql" for window functions
 
-**References
--Oracle Sql Documentation
--Lecture 1: SQL Command basics
-- Lecture 2: Github Basics
-
-
-*Integrity Statement:
-All sources were properly cited. Implementations and analysis represent original work. No AI-generated content was copied without attributionor adaptation."
 
 *selected screenshots
 Sql JOINs:
@@ -98,6 +97,31 @@ Sql JOINs:
 
 
 <img width="1366" height="768" alt="Navigation Functions" src="https://github.com/user-attachments/assets/9e6cc8cf-7094-4885-8fe1-fdef421a3a8a" />
+
+**Result analysis
+ * Descriptive:
+   -70% of transactions are "Send" type
+   -Top 10% of customers generate 50% of total transaction value
+ *Diagnostic:
+   -Inactive customers often registered>6 months ago with low initial engagement.
+   -Transaction dips occur mid-month, possibly due to salary cycles.
+ *Prescriptive:
+  - Launch reactivation campaigns for inactiveusers.
+  - offer agent incetives in low-activity regions.
+  - introduce premium features for
+
+**References
+-Oracle Sql Documentation
+-Lecture 1: SQL Command basics
+- Lecture 2: Github Basics
+
+
+*Integrity Statement:
+All sources were properly cited. Implementations and analysis represent original work. No AI-generated content was copied without attributionor adaptation."
+
+
+
+   
 
 
 
