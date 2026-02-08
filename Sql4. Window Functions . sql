@@ -1,1 +1,26 @@
+--WINDOW FUNCTIONS
+/*RANKING CUSTOMERS*/
+SELECT customer_id;
+      SUM(amount) AS total_amount,
+      RANK() OVER (ORDER BY SUM(amount) DESC) AS rank_position
+FROM transactions
+GROUP BY customer_id;
+
+/*Running total of transactions*/
+
+SELECT transaction_date
+      amount,
+      SUM(amount) OVER (ORDER BY transaction_date) AS running_total
+FROM transactions;
+
+SELECT transactions_date,
+      amount,
+      LAG(amount) OVER (ORDER BY transaction_date) AS previous_ amount
+FROM transactions;
+/*customer segmentation*/
+SELECT customer_id,
+       SUM(amount) AS total_amount,
+       NTILE(4) OVER (ORDER BY SUM(amount)) AS usage_group
+FROM transactions
+GROUP BY customer_id;
 
