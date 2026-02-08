@@ -1,1 +1,21 @@
+INSERT INTO customers VALUES (1, 'Jean Paul', '0788000001', 'Kigali');
+INSERT INTO customers VALUES (2, 'Aline Mukamana', '0788000002', 'Huye');
+INSERT INTO customers VALUES (3, 'Eric Ndayishimiye', '0788000003', 'Musanze');
 
+INSERT INTO agents VALUES (101, 'MTN Agent Kigali', 'Kigali');
+INSERT INTO agents VALUES (102, 'MTN Agent Huye', 'Huye');
+
+INSERT INTO transactions VALUES
+(1001, 1, 101, DATE '2025-01-10', 'TRANSFER', 5000);
+
+INSERT INTO transactions VALUES
+(1002, 1, 101, DATE '2025-02-12', 'WITHDRAWAL', 8000);
+
+INSERT INTO transactions VALUES
+(1003, 2, 102, DATE '2025-02-15', 'PAYMENT', 3000);
+
+COMMIT;
+
+INSERT INTO customers VALUES (4, 'CYUBAHIRO Ivan', '0788412210', 'GISENYI');
+INSERT INTO customers VALUES (5, 'CYUZUZUZO Shanice', '0786710498', 'RUSIZI');
+COMMIT;
